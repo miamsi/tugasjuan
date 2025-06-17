@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-dset = pd.read_csv(r"D:\Kerjaan\Python\Road To Data Analyst\tugas dari juan\data.csv", header=0, sep=',', low_memory=False)
+dset = pd.read_csv("data.csv", header=0, sep=',', low_memory=False)
 dset = dset.astype(object)
 coltodrop = ['province_id', 'city_id', 'district_id', 'npsn', 'street_name', 'lat', 'long']
 dset.drop(columns=coltodrop, inplace=True)
